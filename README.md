@@ -84,3 +84,13 @@ Dados obtidos para: São Paulo, SP
 Preenchendo formulário para: Londrina, PR...
 Preenchendo formulário para: São Paulo, SP...
 Automação finalizada com sucesso!
+
+Nota: Este projeto foi desenvolvido para fins educacionais demonstrando a integração entre APIs REST e automação de interface (GUI).
+
+
+---
+
+### Observações sobre o código:
+
+1.  **WebDriver Manager:**`ChromeDriverManager().install()`, evita que o código quebre quando o Google Chrome atualiza no computador.
+2.  **Fragilidade do Google Forms:** O Google Forms muda as classes dos botões e inputs com frequência. O código usa uma lógica inteligente (`find_elements` por ordem e `xpath` buscando texto "Enviar"). Se o Google mudar o layout, pode ser necessário ajustar os seletores no futuro.
