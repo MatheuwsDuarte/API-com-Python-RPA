@@ -7,7 +7,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 # Configurações
-API_KEY = "81d51eceeee3455a81133319252011" # minha chave no weatherapi.com
+API_KEY = "<chave_aqui>" # minha chave no weatherapi.com
 CIDADES = ['Londrina, PR', 'São Paulo, SP', 'Porto Alegre, RS', 'Florianópolis, SC']
 URL_FORMULARIO = "https://forms.gle/pp5zSMEvmHisxjcn8"
 
@@ -117,4 +117,5 @@ if __name__ == "__main__":
         #Preencher formulário
         preencher_formulario(tabela_clima)
     else:
+
         print("Nenhum dado foi coletado. Verifique sua API Key.")
